@@ -1,0 +1,231 @@
+/*  Cabeçalho  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --roxo-escuro: #441f88;
+    --roxo-claro: #5c20c6;
+    --branco: #f9f9f9;
+    --cinza: #cccccc;
+    --preto:#171717;
+}
+
+header, footer{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    color: var(--branco);
+    align-items: center;
+    padding: 10px 10%;
+    font-weight:bold ;
+}
+
+nav{
+    gap: 10px;
+}
+header{
+    justify-content: space-between;
+    background-color: var(--roxo-escuro);
+    top: 0;
+    bottom: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+  }
+nav ul li {
+    display: inline;
+    margin-right: 20px;    
+  }
+
+
+/* Body  */
+
+body{
+    background-color: var(--cinza);
+}
+
+h1,h2,h3 {
+    text-align: center;
+}
+
+/* Home */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px 16px;
+    margin: 30px 0;
+    justify-content: center;
+}
+
+.box_home > div{
+    width: 500px;
+}
+
+#text_home{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px
+}
+#text_home > h2 {
+    font-size: 2.5em;
+    justify-content: center;
+}
+
+#text_home  > h3 {
+    font-size: 1.1em;
+}
+
+#text_home > p {
+    text-align: center;
+}
+
+#text_home > button {
+    width: 200px;
+}
+
+/*  Sobre */
+
+#sobre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+    padding: 0 300px;
+}
+
+#text_sobre{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+}
+
+#text_sobre > h2{
+    font-size: 2.5em;
+}
+
+#text_sobre > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+#text_sobre > button {
+    width: 200px;
+}
+#sobre> div > img{
+    height: 350px;
+    border-radius: 50%;
+    border: 4px solid var(--roxo-claro);
+}
+
+#box_git{
+    width: 100px;
+}
+
+/* Contato */
+
+#contato{
+    margin-top: 10px;
+    display: flex;
+    text-align:left;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px 0;   
+}
+
+.text_contato{
+    width: 500px;
+}
+
+.text_contato> h2{
+    font-size: 1.5em;
+}
+
+
+.redes_sociais > a{
+    display: flex;
+    justify-content: center;
+}
+.redes_sociais > button{
+    width: 100px;
+}
+
+.redes_sociais{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+ /* formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+form > button {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+input, textarea {
+    border-radius: 15px;
+    margin-bottom: 10px;
+    width: 300px;
+    border-style: none;
+}
+
+button {
+    background-color: var(--roxo-claro);
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--branco);
+    font-size: 0.85em;
+    border-style: none;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--roxo-claro);
+    bottom: 0;
+    justify-content: center;
+}
